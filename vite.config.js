@@ -9,6 +9,14 @@ import tailwindcss from "@tailwindcss/vite";
 //   /not-a-fit.html -> when the qualifier screens a visitor out
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  // `npm start` serves the built dist/ folder on a hosting platform:
+  // listens on all interfaces, on the platform's PORT (3000 if none is set),
+  // and accepts requests for whatever domain the site is deployed under.
+  preview: {
+    host: true,
+    port: Number(process.env.PORT) || 3000,
+    allowedHosts: true,
+  },
   build: {
     rollupOptions: {
       input: {
