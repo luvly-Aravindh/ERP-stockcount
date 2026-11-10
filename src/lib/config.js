@@ -4,6 +4,8 @@ export const CONFIG = {
   deskUrl: import.meta.env.VITE_DESK_URL || "https://deskbackend.getnos.io/v1/lead",
   deskKey: import.meta.env.VITE_DESK_API_KEY || "lh_5fvB_xJRZH216NWDhEZerpWBbMxZ7atGnHGcDbbY4c0",
   deskTimeoutMs: 15000,
+  /* subject line of the notification email Desk sends for each lead */
+  deskSubject: "New Willworks ERP Form Submission",
   source: "stock-gap-audit",
   variant: "audit-review-10plus-v3",
   bookingUrl: "https://share.synamate.com/widget/bookings/success-with-stockount-campaign",

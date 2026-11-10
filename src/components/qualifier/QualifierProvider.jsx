@@ -90,6 +90,7 @@ export function QualifierProvider({ children }) {
     async (d, honeypot) => {
       const res = isFit(answers);
       const payload = {
+        subject: CONFIG.deskSubject,
         source: CONFIG.source,
         variant: CONFIG.variant,
         region,
